@@ -14,6 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors: {
+      accent:  `rgba(var(--accent), <alpha-value>)`,
+      primary: `rgba(var(--primary), <alpha-value>)`,
+      secondary: `rgba(var(--secondary), <alpha-value>)`,
+      navy: `rgba(var(--navy), <alpha-value>)`,
+      mint: `rgba(var(--mint), <alpha-value>)`,
+      cherry: `rgba(var(--cherry), <alpha-value>)`,
+    }
   },
   plugins: [],
 };
