@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Nunito } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Logo from "./components/logo";
 
@@ -17,9 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`px-10 py-5 ${inter.className}`}>
-      <Logo />
-        {children}
+      <body
+        className={`flex flex-col h-screen w-screen px-10 py-5 ${inter.className}`}
+      >
+        <div className="flex flex-col justify-between w-full h-full">
+          <Logo />
+          {children}
+        </div>
       </body>
     </html>
   );
